@@ -24,7 +24,7 @@ function valForm(){
         Err_Contenido("correo");
         return false;
     }else{
-        var expresion = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+        var expresion = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+ $/;
         if (!expresion.test(vMail)){
             Err_Color("correo");
             Err_Contenido("No se permiten caracteres especiales o numeros");
